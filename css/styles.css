@@ -117,7 +117,6 @@ a {
 }
 
 /* Hero-page */
-
 .hero-page .container {
   display: flex;
   flex-direction: column;
@@ -125,10 +124,10 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 188px 0;
 }
 
 .hero-title {
+  padding: 188px 0 188px;
   text-align: center;
   background-color: #2e2f42;
 }
@@ -161,6 +160,7 @@ a {
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
+  border-radius: 4px;
 }
 
 .button:hover,
@@ -170,8 +170,11 @@ a {
 }
 
 /* Features */
+.section-features {
+  padding: 120px 0 120px;
+}
+
 .section-features .container {
-  padding: 120px 0;
   justify-content: start;
   align-items: flex-start;
   text-align: left;
@@ -217,11 +220,8 @@ a {
 }
 
 /* Team */
-.section-team .container {
-  padding: 120px 0;
-}
-
 .section-team {
+  padding: 120px 0 120px;
   background-color: #f4f4fd;
 }
 
@@ -242,12 +242,18 @@ a {
 }
 
 .team-item {
+  flex-basis: calc((100%-3 * 24px) / 4);
   background-color: #ffffff;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .photo-teams {
-  flex-basis: calc((100%-3 * 24px) / 4);
-  border-radius: 0 0 4px 4px;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .team-info {
@@ -272,16 +278,14 @@ a {
 }
 
 /* Portfolio */
-.section-portfolio .container {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.section-portfolio {
+  padding: 120px 0 120px 0;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
-  padding-left: 0;
 }
 
 .section-portfolio {
@@ -289,13 +293,22 @@ a {
 }
 
 .portfolio-item {
-  flex-basis: calc((100%-2 * 24) / 3);
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .portfolio-info {
-  padding: 32px 0;
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
 }
 
 .title-portfolio {
@@ -305,7 +318,6 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-  margin-bottom: 72px;
 }
 
 .product-title {
@@ -323,8 +335,8 @@ a {
 }
 
 /* Footer */
-.footer-page .container {
-  padding: 100px 0;
+.footer-page {
+  padding: 100px 0 100px;
 }
 
 .footer-page {
